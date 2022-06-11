@@ -1,6 +1,8 @@
 # Web-Development
 
-*Lecture note from May 9th* https://fhda-edu.zoom.us/rec/play/PTdnbMuYci8my9CDdqyHDXlUt3mpbYtyOB2hUUK7zvAQ8Mxcyo51bOpwidW_JtCdCrdC4o8qdkKL1s4.a_o31hlRDosImSrM?continueMode=true&_x_zm_rtaid=KGPhdqD8RomStFwZGh3Y8w.1654976162836.fea5656985d55f31a9234595e2e13b5c&_x_zm_rhtaid=973<br>
+*[Lecture note from May 23th](https://fhda-edu.zoom.us/rec/play/PTdnbMuYci8my9CDdqyHDXlUt3mpbYtyOB2hUUK7zvAQ8Mxcyo51bOpwidW_JtCdCrdC4o8qdkKL1s4.a_o31hlRDosImSrM?continueMode=true&_x_zm_rtaid=KGPhdqD8RomStFwZGh3Y8w.1654976162836.fea5656985d55f31a9234595e2e13b5c&_x_zm_rhtaid=973)*<br>
+*[Lecture note from May 25th](https://fhda-edu.zoom.us/rec/play/B727TtFoCBO5mn-pqZn_-GT20rVmUWsI2bBkgeUacn3_YEmUCKCmj1ooiSTeHPTnXcLrfiDhgIX23IwN.hf5uVe0reLPU8z4J?continueMode=true&_x_zm_rtaid=KGPhdqD8RomStFwZGh3Y8w.1654976162836.fea5656985d55f31a9234595e2e13b5c&_x_zm_rhtaid=973)* <br>
+
 ## HTTP Protocol
 The HTTP protocol is layered over a reliable bidirectional byte stream, 
 normally TCP (Transfer Contral Protocol(reliable)). Each HTTP interaction consists of a request sent from the client to the server, followed by a response sent from the server to the client. Requests and responses are expressed in a simple ASCII format.(Clear Text) 
@@ -75,19 +77,26 @@ Location header indicating the new address. </td>
 
 #### GET Request (Read information)
 **Browser**
-> header - browser information<br>
-> body - 
+> **header** - Browser information (Data is sent in header to the server)<br>
+> **body** - Usually empty
+
+**Server**
+> **header** - Server information<br>
+> **body** - Response data
 
 #### POST Request (Write information)
 **Browser**
-> header - browser information<br>
-> body - Request Data, and Value/Name pairs.
+> **header** - browser information<br>
+> **body** - Request Data, and Value/Name pairs. (data is sent in request body)
 
+**Server**
+> **header** - Server information<br>
+> **body** - Response data
 
 ### Servlet 
 > 1. Load Servlet Calss
 > 2. Create Servlet Instance
-> 3. Call the *init()* method
+> 3. Call the *init()* method (Initiation Servlet and call service() method)
 > 4. Call the *service()* method
 > 5. Call the *destory()* method
 
