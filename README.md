@@ -3,7 +3,7 @@
 *[Lecture note from May 23th](https://fhda-edu.zoom.us/rec/play/PTdnbMuYci8my9CDdqyHDXlUt3mpbYtyOB2hUUK7zvAQ8Mxcyo51bOpwidW_JtCdCrdC4o8qdkKL1s4.a_o31hlRDosImSrM?continueMode=true&_x_zm_rtaid=KGPhdqD8RomStFwZGh3Y8w.1654976162836.fea5656985d55f31a9234595e2e13b5c&_x_zm_rhtaid=973)*<br>
 *[Lecture note from May 25th](https://fhda-edu.zoom.us/rec/play/B727TtFoCBO5mn-pqZn_-GT20rVmUWsI2bBkgeUacn3_YEmUCKCmj1ooiSTeHPTnXcLrfiDhgIX23IwN.hf5uVe0reLPU8z4J?continueMode=true&_x_zm_rtaid=KGPhdqD8RomStFwZGh3Y8w.1654976162836.fea5656985d55f31a9234595e2e13b5c&_x_zm_rhtaid=973)* <br>
 *[Lecture note from Jun 1st](https://fhda-edu.zoom.us/rec/play/K64VIuu2ROBimsDY6bgN22xfr9qhzMIj5CI3Q0bBl-3_zd8nIw_NpnUhAVeEmZiY0PW8eknbEDCbt2ZA.kJbJ7kXsHuEI-8Pr?startTime=1654139129000&_x_zm_rtaid=KGPhdqD8RomStFwZGh3Y8w.1654976162836.fea5656985d55f31a9234595e2e13b5c&_x_zm_rhtaid=973)* <br>
-
+*[Lecture note from Jun 6th](https://fhda-edu.zoom.us/rec/play/N_v9N7X7xOpibS6iSxnwc-3PJ2RYN28Dx22drfhW_NM76gJzo1cedyga6cb-GbcnILeSCfN4InA8j9I.PsVM-L0I6jQ4qFMz?continueMode=true&_x_zm_rtaid=X2q65z4NRuqbxpAKXg0oDQ.1655063985771.f6d4c887ee293e5c6a94522b78e44c9c&_x_zm_rhtaid=535)* <br>
 
 ## HTTP Protocol
 The HTTP protocol is layered over a reliable bidirectional byte stream, 
@@ -743,8 +743,31 @@ public class ShowCookies extends HttpServlet {
   }
 }
 ```
+## JSP (Java Server pages)
+JSP is a Servlet with the following differences:<br>
+JSP = HTML code + Java Code.<br>
+WS - receives the request -- parse HTML and strip out Java --> Pass to appserver<br>
+generate a java file (builds a java file + compiles) - generatea .java + .class file (work directory)<br>
+JSP is loaded as a Servlet -- service the requests.<br>
+
+### JSPExamples 
+```Java
+//scripting elements
+<%  code goes here  %> 
+
+//begin and end token - this refers to the service method.
+//Expression tag
+<%= ... %>
+
+//declarations
+<%! ... %> --treated as instance variable in a Servlet (JSP is a servlet) but these static to all requests.
 
 
+//JSP Comment
+<% //JSP Comment ------  %>
+<!--HTML Comments-->
+
+```
 
 ## JDBC(Java Database Connectivity)
 provide java interface. connection between Dabtabase and Java.
