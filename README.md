@@ -5,6 +5,11 @@
 *[Lecture note from Jun 1st](https://fhda-edu.zoom.us/rec/play/K64VIuu2ROBimsDY6bgN22xfr9qhzMIj5CI3Q0bBl-3_zd8nIw_NpnUhAVeEmZiY0PW8eknbEDCbt2ZA.kJbJ7kXsHuEI-8Pr?startTime=1654139129000&_x_zm_rtaid=KGPhdqD8RomStFwZGh3Y8w.1654976162836.fea5656985d55f31a9234595e2e13b5c&_x_zm_rhtaid=973)* <br>
 *[Lecture note from Jun 6th](https://fhda-edu.zoom.us/rec/play/N_v9N7X7xOpibS6iSxnwc-3PJ2RYN28Dx22drfhW_NM76gJzo1cedyga6cb-GbcnILeSCfN4InA8j9I.PsVM-L0I6jQ4qFMz?continueMode=true&_x_zm_rtaid=X2q65z4NRuqbxpAKXg0oDQ.1655063985771.f6d4c887ee293e5c6a94522b78e44c9c&_x_zm_rhtaid=535)* <br>
 
+Output
+<img src="output.gif">
+
+
+
 ## HTTP Protocol
 The HTTP protocol is layered over a reliable bidirectional byte stream, 
 normally TCP (Transfer Contral Protocol(reliable)). Each HTTP interaction consists of a request sent from the client to the server, followed by a response sent from the server to the client. Requests and responses are expressed in a simple ASCII format.(Clear Text) 
